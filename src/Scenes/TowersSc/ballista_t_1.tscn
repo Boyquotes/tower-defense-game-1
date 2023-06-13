@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmnj7c3252rqo"]
+
+[ext_resource type="Texture2D" uid="uid://csgipg05dnj60" path="res://src/Assets/Towers/Floor64x64.png" id="1_ihduj"]
+[ext_resource type="Script" path="res://src/Scripts/ballista_t_1.gd" id="1_rjn8d"]
+[ext_resource type="Texture2D" uid="uid://ba4jaifvawg8g" path="res://src/Assets/Towers/BallistaT1_64x64.png" id="2_jmmmm"]
+
+[node name="BallistaT1" type="Node2D"]
+script = ExtResource("1_rjn8d")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("1_ihduj")
+
+[node name="Ballista" type="Sprite2D" parent="."]
+texture = ExtResource("2_jmmmm")
+
+[node name="Marker2D" type="Marker2D" parent="Ballista"]
+position = Vector2(0, -35)
